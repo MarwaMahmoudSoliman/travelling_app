@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="font_sizes">
+        <item>tourist Attractions</item>
+        <item>Religious landmarks</item>
+        <item>coastal places </item>
+        <item>Archaeological sites</item>
+    </string-array>
+
+</resources>

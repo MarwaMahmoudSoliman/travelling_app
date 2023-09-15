@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    app:cardUseCompatPadding="true"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="0dp"
+    android:backgroundTint="#EFEDED"
+>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="2dp">
+        <androidx.cardview.widget.CardView
+            android:backgroundTint="#EFEDED"
+
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="10dp"
+            android:elevation="10dp"
+            >
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:id="@+id/imageView"
+                android:layout_width="150dp"
+                android:layout_height="90dp"
+                android:src="@drawable/p"
+                android:scaleType="centerCrop"/>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/textView_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="24sp"/>
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/textView_site"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <RatingBar
+                android:id="@+id/rating_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleX=".3"
+                android:scaleY=".3"
+                android:rating="3.5"
+                android:stepSize=".5"
+                android:numStars="4"
+                android:progressTint="#FFC107"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

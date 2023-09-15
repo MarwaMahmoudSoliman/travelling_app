@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UploadActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/lavander_border"
+        android:padding="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="50dp">
+        <Button
+            app:cornerRadius = "20dp"
+            android:textSize="12sp"
+            android:text="Choose img"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/uploadImage"
+            android:layout_marginTop="0dp"
+            />
+
+        <Spinner
+            android:background="@drawable/lavander_border"
+            app:cornerRadius = "20dp"
+            android:textSize="18sp"
+            android:layout_marginBottom="30dp"
+            android:padding="16dp"
+            android:layout_gravity="center"
+            android:id="@+id/spinnerTextSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             />
+
+            />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/uploadCaption"
+                android:layout_weight="0.6"
+                android:background="@drawable/lavander_border"
+                android:padding="16dp"
+                android:hint="Add a caption..."/>
+        <EditText
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/des"
+            android:layout_weight="0.6"
+            android:background="@drawable/lavander_border"
+            android:padding="16dp"
+            android:hint="Add a description..."/>
+        <EditText
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pos"
+            android:layout_weight="0.6"
+            android:background="@drawable/lavander_border"
+            android:padding="16dp"
+            android:hint="pos..."/>
+        <EditText
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            android:layout_weight="0.6"
+            android:background="@drawable/lavander_border"
+            android:padding="16dp"
+            android:hint="Add a price..."/>
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/upButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Up load"
+            android:textSize="18sp"
+            android:backgroundTint="@color/lavander"
+            app:cornerRadius = "20dp"/>
+            />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center"
+            android:indeterminateTint="@color/lavander"
+            android:visibility="invisible"/>
+        </LinearLayout>
+
+</LinearLayout>

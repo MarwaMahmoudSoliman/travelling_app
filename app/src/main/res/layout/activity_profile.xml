@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/_background"
+    tools:context=".profile">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_baseline_person_24"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp" />
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="0dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+        android:text="Sign in to see deals and Genius discounts,manage your trips,and more"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/signup_btn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hint"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:backgroundTint="#5A6EF3"
+        android:text="Sign Up"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="6dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/signup_btn"
+        android:background="@drawable/lavander_border"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:backgroundTint="#EFEDED"
+>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Message"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textColor="@color/black"
+            app:icon="@drawable/ic_baseline_message_24"
+
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/sendemail"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Message"
+            android:text="sendEmail"
+            android:textColor="@color/black"
+            app:icon="@drawable/ic_baseline_email_24" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Loc"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sendemail"
+            android:text="location"
+            android:textColor="@color/black"
+
+            app:icon="@drawable/ic_baseline_location_on_24" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Loc"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:backgroundTint="#5A6EF3"
+            android:text="Log out"
+
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="6dp" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
